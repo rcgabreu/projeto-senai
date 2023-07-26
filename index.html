@@ -9,34 +9,59 @@
     <link rel="stylesheet" href="css/swiper-bundler.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 </head>
 <body>
     <header class="container">
+        <!--MENU-->
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <!--ITENS MENU-->
+        <menu id="itens">
+        <ul>
+            <li><a href="#">Minha conta</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contate-nos</a></li>
+        </ul></menu>
+
+        <!---LOGO + GAME MANIA-->
         <div class="logo">
             <img src="imagens/gamemaniaicon.png">
             <p>GAME MANIA</p>
        </div>
-
-        <div class="search-box">
-            <form action="" class="search-bar">
-            <input type="text" placeholder="Insira seu produto aqui">
-            <button type="submit"> <i class="fa fa-search"></i>
-            </button>     
-        </form>       
-        </div> 
-
-    <div class="socialmedia">
-        <div class="top-social">
-            <a href="#"><i class="fa fa-user fa-2x"></i></a> 
+       <!-- CAMPO DE BUSCA-->
+       <div class="search-box">
+        <form action="" class="search-bar">
+        <input type="text" placeholder="Insira seu produto aqui">
+        <button type="submit"> <i class="fa fa-search"></i> </button>
+        </form> 
+</div> 
+        <!--ICONS DA LOJA-->
+    <div class="icons-shop">
+        <div class="shopping">
+            <a href="login.html" target="_blank"><i class="fa fa-user fa-2x"></i></a> 
             <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
             <a href="#"><i class="fa fa-heart fa-2x"></i></a>	
-            <a href="#"><i class="fa fa-envelope fa-2x"></i></a>	
-
+            <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
         </div>
-        </ul>
     </div>
+
+   
 </header>
+    <!--REDES SOCIAIS-->
+
+<div class="redes">
+    <p>Siga-nos nas</p>
+    <a href="#"><i class="fa fa-facebook" id="facebook"></i></a> 
+            <a href="#"><i class="fa fa-instagram" id="instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter" id="twitter"></i></a>	
+            <a href="#"><i class="fa fa-whatsapp" id="whatsapp"></i></a>
+</div>
+
+<!-- BARRA DOS PRODUTOS -->
 <ul class="produtos">
     <li class="item">
         <a class="nav-link" href="#">VIDEO GAME</a>
@@ -63,8 +88,10 @@
     </ul>
 </div>
 
+
+<!-- CARROSSEL -->
     <div class="slide-container swiper">
-    <div class="slide-content">
+        <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
                     <div class="image-content">
@@ -202,19 +229,78 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>    
     </div>
+<!-- NEWSLETTER-->
+<div class="newsletter">
+    <p>Cadastre o seu e-mail e fique por dentro das novidades!</p>
+    <form action="" class="assinatura">
+        <input type="email" placeholder="Insira seu e-mail aqui">
+        <button type="submit"> <i class="fa fa-search"></i>
+        </button>     
+    </form>       
+    </div> 
+
+        <!-- AVALIAÇÃO -->
+        <div class="star">
+            <ul class="avaliacao">
+                <li class="star-icon ativo" valor-avaliacao="1"></li>
+                <li class="star-icon" valor-avaliacao="2"></li>
+                <li class="star-icon" valor-avaliacao="3"></li>
+                <li class="star-icon" valor-avaliacao="4"></li>
+                <li class="star-icon" valor-avaliacao="5"></li>
+                </ul>
+                <p><span>&#10077;</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae est quam, explicabo ipsum culpa laborum illum nam fuga qui ullam magni reiciendis. Earum perferendis libero possimus expedita natus illum beatae.<span>&#10078;</span>
+                </p>
+        </div>
+    </div>
+
+<!--FOOTER-->
 
 
-    <div class="notices">
-        <h2 class="h_noticias">
-            Acompanhe as notícias sobre o mundo GAMER!
-        </h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/73QzQYN8FtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
- </div></body>
+
+<div class="footer-col">
+    <ul>
+        <h4> Formas de Pagamento</h4>
+        <img src="imagens/mastercard.png"></img>
+        <img src="imagens/visa.png"></img>
+       <img src="imagens/americanexpress.png"></img>
+       <img src="imagens//paypal.png"></img>
+    </ul>
+
+
+    
+    <ul>
+        <h4>Empresa</h4>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Formas de pagamento</a></li>
+        <li><a href="#">Devoluções</a></li>
+        <li><a href="#">Status De Pedido</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+    </ul>
+
+
+    <ul>
+        <h4>Suporte</h4>
+        <li><a href="#">Entre em contato conosco</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Comunidade</a></li>
+    </ul>
+
+    <ul>
+    <h4>Game Mania</h4>
+    <li><a href="#">+111 1234568</a></li>
+    <li><a href="#">blablabla@bla.dacom</a></li>
+</ul>
+
+</div>
+
+</footer>
+    </body>
+
+
+
 
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="video" tarh></script>
-
-
 </html>
